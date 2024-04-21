@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/backgroundbig"
+    android:layout_width="match_parent"
+    android:paddingTop="55dp"
+    android:layout_height="match_parent"
+    tools:context=".LoginCo">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Log in"
+                android:textAlignment="center"
+                android:textSize="36dp"
+                android:textStyle="bold" />
+
+
+
+
+
+            <EditText
+                android:id="@+id/log_usernameid"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:hint="Username"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="24dp" />
+
+
+
+            <EditText
+                android:id="@+id/log_passwdid"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPassword"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/baseline_password_24"
+                android:drawablePadding="8dp"
+                android:hint="Password"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/loginButtonid"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Log in"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/singupRedirectText"
+                android:text="Not yet registered? Sign Up"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
